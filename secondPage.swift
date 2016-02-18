@@ -13,6 +13,7 @@ class secondPage: UIViewController {
     
     
     @IBOutlet var Photo: UIImageView!
+    @IBOutlet var TextField : UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +26,9 @@ class secondPage: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func nextQuesBtn(sender: AnyObject) { self.performSegueWithIdentifier("TwotoThree", sender: self)
+        
+    }
 
 }
