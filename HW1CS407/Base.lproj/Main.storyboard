@@ -25,43 +25,53 @@
                                     <color key="titleShadowColor" red="0.99915650276302737" green="1" blue="0.96426911526599834" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7FR-Nm-75Y" kind="show" id="YJV-8l-noe"/>
+                                    <action selector="startBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="92S-xk-SYO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="7FR-Nm-75Y" kind="show" identifier="oneTotwo" id="0xl-vG-fMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="312"/>
+            <point key="canvasLocation" x="81" y="312"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Page-->
         <scene sceneID="ADP-2e-hnw">
             <objects>
-                <viewController id="7FR-Nm-75Y" sceneMemberID="viewController">
+                <viewController id="7FR-Nm-75Y" customClass="secondPage" customModule="HW1CS407" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uSJ-wT-IWg"/>
                         <viewControllerLayoutGuide type="bottom" id="GvF-m4-MNx"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sfs-TH-WpH">
+                    <view key="view" contentMode="scaleToFill" id="sfs-TH-WpH" customClass="Secondpage">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7p-2J-ePp">
-                                <rect key="frame" x="319" y="438" width="91" height="30"/>
+                                <rect key="frame" x="366" y="439" width="91" height="30"/>
                                 <animations/>
                                 <state key="normal" title="nextQuestion"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z72-Eq-yGZ">
+                                <rect key="frame" x="197" y="93" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Photo" destination="z72-Eq-yGZ" id="3K3-yE-4dX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pdj-1O-Ric" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="312"/>
+            <point key="canvasLocation" x="809" y="312"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ttA-Y0-gq3">
